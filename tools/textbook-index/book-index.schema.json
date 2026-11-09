@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:atv-family:book-index:1",
+  "title": "Path-derived, unreviewed multi-stage textbook blob inventory",
+  "type": "object", "additionalProperties": false,
+  "required": ["schemaVersion", "repo", "commit", "treeSHA", "treeTruncated", "status", "statistics", "books"],
+  "properties": {
+    "schemaVersion": {"type": "integer", "const": 1},
+    "repo": {"type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"},
+    "commit": {"$ref": "#/$defs/sha"},
+    "treeSHA": {"$ref": "#/$defs/sha"},
+    "treeTruncated": {"type": "boolean"},
+    "status": {"enum": ["partial_tree", "empty_inventory", "tree_complete_content_unverified"]},
+    "statistics": {
+      "type": "object", "additionalProperties": false,
+      "required": ["treeEntries", "blobEntries", "indexedBlobs", "logicalDocuments", "ignoredBlobs", "formats", "coverage", "unknown", "needsReview", "verifiedContent", "runtimeQuestions", "grade4PathMatches"],
+      "properties": {
+        "treeEntries": {"type": "integer", "minimum": 0},
+        "blobEntries": {"type": "integer", "minimum": 0},
+        "indexedBlobs": {"type": "integer", "minimum": 0},
+        "logicalDocuments": {"type": "integer", "minimum": 0},
+        "ignoredBlobs": {"type": "integer", "minimum": 0},
+        "formats": {"type": "object"}, "coverage": {"type": "object"}, "unknown": {"type": "object"},
+        "needsReview": {"type": "integer", "minimum": 0},
+        "verifiedContent": {"type": "integer", "const": 0},
+        "runtimeQuestions": {"type": "integer", "const": 0},
+        "grade4PathMatches": {"type": "integer", "minimum": 0}
+      }
+    },
+    "books": {"type": "array", "items": {"$ref": "#/$defs/book"}}
+  },
+  "$defs": {
+    "sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "nullableLabel": {"type": ["string", "null"], "minLength": 1},
+    "metadata": {
+      "type": "object", "additionalProperties": false,
+      "required": ["stage", "system", "grade", "semester", "subject", "textbookVersion", "volume"],
+      "properties": {
+        "stage": {"enum": ["primary", "junior_secondary", "senior_secondary", "higher_education", "preschool", "vocational", "special_education", null]},
+        "system": {"enum": ["6_3", "5_4", null]},
+        "grade": {"type": ["integer", "null"], "minimum": 1, "maximum": 12},
+        "semester": {"enum": ["first", "second", "full_year", null]},
+        "subject": {"$ref": "#/$defs/nullableLabel"},
+        "textbookVersion": {"$ref": "#/$defs/nullableLabel"},
+        "volume": {"$ref": "#/$defs/nullableLabel"}
+      }
+    },
+    "book": {
+      "type": "object", "additionalProperties": false,
+      "required": ["book_id", "repo", "commit", "path", "blobsha", "size", "format", "part", "logicalDocumentPath", "metadata", "metadataBasis", "rawSegments", "reviewStatus", "reviewFlags", "officialApproval", "licenseStatus"],
+      "properties": {
+        "book_id": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "repo": {"type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"},
+        "commit": {"$ref": "#/$defs/sha"},
+        "path": {"type": "string", "minLength": 1},
+        "blobsha": {"$ref": "#/$defs/sha"},
+        "size": {"type": ["integer", "null"], "minimum": 0},
+        "format": {"enum": ["pdf", "pdf_part", "djvu", "epub"]},
+        "part": {"type": ["integer", "null"], "minimum": 1},
+        "logicalDocumentPath": {"type": "string", "minLength": 1},
+        "metadata": {"$ref": "#/$defs/metadata"},
+        "metadataBasis": {"const": "path-derived"},
+        "rawSegments": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "reviewStatus": {"const": "needs_review"},
+        "reviewFlags": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+        "officialApproval": {"type": "null"},
+        "licenseStatus": {"const": "needs_review"}
+      }
+    }
+  }
+}

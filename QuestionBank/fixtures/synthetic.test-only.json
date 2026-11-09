@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "bankId": "SYNTHETIC-TEST-ONLY-NOT-CURRICULUM",
+  "curriculum": {
+    "kind": "general_knowledge",
+    "alignment": "not_exact_textbook",
+    "description": "SYNTHETIC TEST ONLY: validator exercise, not teaching material or a real grade-specific bank."
+  },
+  "testOnly": true,
+  "licenseStatus": "test_only",
+  "reviewEvidence": null,
+  "questions": [
+    {
+      "question_id": "TEST-ONLY-001",
+      "stage": "primary",
+      "system": "6_3",
+      "grade": 1,
+      "semester": "first",
+      "subject": "TEST_ONLY_SUBJECT",
+      "textbookVersion": "general_knowledge",
+      "chapter": "TEST_ONLY_CHAPTER",
+      "knowledgePoints": ["TEST_ONLY_OPTION_MATCHING"],
+      "difficulty": "easy",
+      "prompt": "SYNTHETIC TEST ONLY: select the option whose identifier is A.",
+      "type": "single_choice",
+      "options": [{"id": "A", "text": "Test marker A"}, {"id": "B", "text": "Test marker B"}],
+      "answer": "A",
+      "explanation": "SYNTHETIC TEST ONLY: A is the requested test marker; this is not a textbook question.",
+      "sourceBook": null,
+      "sourcePage": null,
+      "reviewStatus": "needs_review"
+    }
+  ]
+}

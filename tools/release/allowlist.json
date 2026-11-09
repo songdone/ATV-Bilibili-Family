@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "policy_version": "1.0.0",
+  "license_sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+  "files": [
+    "LICENSE.md", "README.md", "Gemfile", "Gemfile.lock",
+    "BilibiliLive.xcodeproj/project.pbxproj",
+    "BilibiliLive.xcodeproj/project.xcworkspace/contents.xcworkspacedata",
+    "BilibiliLive.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist",
+    "BilibiliLive.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved",
+    "BilibiliLive.xcodeproj/xcshareddata/xcschemes/BilibiliLive.xcscheme",
+    "BuildTools/Package.swift", "BuildTools/Package.resolved", "BuildTools/Empty.swift",
+    "fastlane/Fastfile", "fastlane/Appfile",
+    "imgs/1.jpg", "imgs/2.jpg", "imgs/3.png",
+    "docs/RELEASE.md", "docs/BUILD.md", "docs/PRIVACY.md", "docs/ARCHITECTURE.md",
+    "docs/FAMILY.md", "docs/QUESTION_BANK.md", "docs/TEXTBOOK_INDEX.md",
+    "Tests/FamilyTVUITests/project.yml", "Tests/FamilyTVUITests/FamilyTVUITests.swift",
+    "tools/release/public_source.py", "tools/release/allowlist.json",
+    "tools/release/test_public_source.py"
+  ],
+  "directories": [
+    {"path": "BilibiliLive", "suffixes": [".swift", ".h", ".m", ".mm", ".c", ".cpp", ".plist", ".storyboard", ".xib", ".strings", ".xcstrings", ".json", ".xml", ".png", ".jpg", ".jpeg", ".svg", ".metal"], "names": ["LICENSE", "LICENSE.md", "LICENSE.txt", "NOTICE", "Package.resolved"]},
+    {"path": "FamilyCore", "suffixes": [".swift", ".h", ".c", ".modulemap", ".json", ".md", ".txt", ".strings", ".xcstrings"], "names": ["LICENSE", "NOTICE", "Package.resolved"]},
+    {"path": "QuestionBank", "suffixes": [".swift", ".py", ".json", ".jsonl", ".md", ".txt", ".toml", ".yaml", ".yml"], "names": ["LICENSE", "NOTICE", "Package.resolved"]},
+    {"path": "tools/questionbank", "suffixes": [".py", ".json", ".jsonl", ".md", ".txt", ".toml"], "names": ["LICENSE", "NOTICE"]},
+    {"path": "tools/textbook-index", "suffixes": [".py", ".json", ".jsonl", ".md", ".txt", ".toml"], "names": ["LICENSE", "NOTICE"]}
+  ],
+  "required_files": [
+    "LICENSE.md", "README.md", "Gemfile", "Gemfile.lock",
+    "BilibiliLive/AppDelegate.swift", "BilibiliLive/Supporting Files/Info.plist",
+    "BilibiliLive/Base.lproj/Main.storyboard",
+    "BilibiliLive/Supporting Files/Base.lproj/LaunchScreen.storyboard",
+    "BilibiliLive/Supporting Files/Assets.xcassets/Contents.json",
+    "BilibiliLive.xcodeproj/project.pbxproj",
+    "BilibiliLive.xcodeproj/project.xcworkspace/contents.xcworkspacedata",
+    "BilibiliLive.xcodeproj/xcshareddata/xcschemes/BilibiliLive.xcscheme",
+    "BilibiliLive.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved",
+    "BuildTools/Package.swift", "BuildTools/Package.resolved", "BuildTools/Empty.swift"
+  ],
+  "exceptions": [
+    {"path": "tools/release/test_public_source.py", "rule": "literal-credential", "line_sha256": "4f8b86c3f5e6de01ffbb4be8793add3c422b8227c9fce13771a11aa43bf44c21", "reason": "Synthetic fixture-not-real password assembled solely to verify secret blocking in a TemporaryDirectory; exact test source line only."},
+    {"path": "tools/release/test_public_source.py", "rule": "literal-credential", "line_sha256": "77ce7ccbf17342a147f8baddbd7a6aa32271fdec11dbb3403c3ae57bb37ada47", "reason": "Synthetic example-only token assembled to test exact exception reporting and invalidation; exact test source line only."},
+    {"path": "BilibiliLive/Request/ApiRequest.swift", "rule": "literal-credential", "line_sha256": "7383fcfd2020c32cd563249af7427ea43b32470b2b00fecbf2e3e2d01ce08b1b", "reason": "Existing upstream ssoCookie is a public API endpoint URL, not a stored login cookie. Exact unchanged line only; still reported."},
+    {"path": "BilibiliLive/Request/ApiRequest.swift", "rule": "literal-credential", "line_sha256": "f04111e8b03ec90335590ec2c96710fe51da28800d958f0444e43f06832ff6fd", "reason": "Existing upstream Bilibili TV protocol appkey, not a household account credential. Exact unchanged line only; still reported."},
+    {"path": "BilibiliLive/Request/ApiRequest.swift", "rule": "literal-credential", "line_sha256": "7f563cb115af219947279f69ac73209343725ce68f541ef31656219c6be28ce0", "reason": "Existing upstream Bilibili TV protocol appsec required by the unchanged protocol. Exact unchanged line only; still reported."}
+  ]
+}

@@ -1,0 +1,23 @@
+name: FamilyTVUITests
+options:
+  deploymentTarget:
+    tvOS: "16.0"
+settings:
+  CODE_SIGNING_ALLOWED: NO
+targets:
+  FamilyTVUITests:
+    type: bundle.ui-testing
+    platform: tvOS
+    sources:
+      - FamilyTVUITests.swift
+    settings:
+      GENERATE_INFOPLIST_FILE: YES
+      PRODUCT_BUNDLE_IDENTIFIER: org.atvfamily.uitests
+schemes:
+  FamilyTVUITests:
+    build:
+      targets:
+        FamilyTVUITests: all
+    test:
+      targets:
+        - FamilyTVUITests

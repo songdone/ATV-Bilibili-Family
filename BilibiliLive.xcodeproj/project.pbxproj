@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA1100010000000000000001 /* FamilyCore in Frameworks */ = {isa = PBXBuildFile; productRef = FA1100010000000000000002 /* FamilyCore */; };
+		0A41EE192A630FEA0066444C /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 0A41EE182A630FEA0066444C /* SwiftProtobuf */; };
+		2806E51E2C1593A000164C10 /* LookinServer in Frameworks */ = {isa = PBXBuildFile; productRef = 2806E51D2C1593A000164C10 /* LookinServer */; };
+		49078E47291BEA2400F556BD /* PocketSVG in Frameworks */ = {isa = PBXBuildFile; productRef = 49078E46291BEA2400F556BD /* PocketSVG */; };
+		494741C329016CCE005D6885 /* MarqueeLabel in Frameworks */ = {isa = PBXBuildFile; productRef = 494741C229016CCE005D6885 /* MarqueeLabel */; };
+		49508E0F2943420100D26812 /* CocoaLumberjack in Frameworks */ = {isa = PBXBuildFile; productRef = 49508E0E2943420100D26812 /* CocoaLumberjack */; };
+		49508E112943420100D26812 /* CocoaLumberjackSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 49508E102943420100D26812 /* CocoaLumberjackSwift */; };
+		499C75EC293058C9003160FB /* CocoaAsyncSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 499C75EB293058C9003160FB /* CocoaAsyncSocket */; };
+		499C76132931A781003160FB /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = 499C76122931A781003160FB /* Swifter */; };
+		499C76162931A7AE003160FB /* SwiftyXMLParser in Frameworks */ = {isa = PBXBuildFile; productRef = 499C76152931A7AE003160FB /* SwiftyXMLParser */; };
+		695081FB2D0FD9E30063044D /* PocketSVG in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 49078E46291BEA2400F556BD /* PocketSVG */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F9171D5F2900FCFB002868C7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F9171D5E2900FCFB002868C7 /* SnapKit */; };
+		F927ED65260F917D00EAB8E3 /* Gzip in Frameworks */ = {isa = PBXBuildFile; productRef = F927ED64260F917D00EAB8E3 /* Gzip */; };
+		F927ED9F2610B5C300EAB8E3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F927ED9E2610B5C300EAB8E3 /* Kingfisher */; };
+		F9B5736E260F652C00771ED5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F9B5736D260F652C00771ED5 /* Alamofire */; };
+		F9B57378260F6BB400771ED5 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = F9B57377260F6BB400771ED5 /* SwiftyJSON */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		499C75F7293096EC003160FB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				695081FB2D0FD9E30063044D /* PocketSVG in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F9B57350260F5F7400771ED5 /* BilibiliLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BilibiliLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4930B97F2D686DC30074E861 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Supporting Files/Info.plist",
+			);
+			target = F9B5734F260F5F7400771ED5 /* BilibiliLive */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4930B8FD2D686DC30074E861 /* BilibiliLive */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (4930B97F2D686DC30074E861 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = BilibiliLive; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9B5734D260F5F7400771ED5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA1100010000000000000001 /* FamilyCore in Frameworks */,
+				F9B57378260F6BB400771ED5 /* SwiftyJSON in Frameworks */,
+				F9B5736E260F652C00771ED5 /* Alamofire in Frameworks */,
+				49078E47291BEA2400F556BD /* PocketSVG in Frameworks */,
+				499C76162931A7AE003160FB /* SwiftyXMLParser in Frameworks */,
+				49508E112943420100D26812 /* CocoaLumberjackSwift in Frameworks */,
+				F927ED65260F917D00EAB8E3 /* Gzip in Frameworks */,
+				F9171D5F2900FCFB002868C7 /* SnapKit in Frameworks */,
+				0A41EE192A630FEA0066444C /* SwiftProtobuf in Frameworks */,
+				494741C329016CCE005D6885 /* MarqueeLabel in Frameworks */,
+				499C76132931A781003160FB /* Swifter in Frameworks */,
+				49508E0F2943420100D26812 /* CocoaLumberjack in Frameworks */,
+				499C75EC293058C9003160FB /* CocoaAsyncSocket in Frameworks */,
+				F927ED9F2610B5C300EAB8E3 /* Kingfisher in Frameworks */,
+				2806E51E2C1593A000164C10 /* LookinServer in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9B57347260F5F7400771ED5 = {
+			isa = PBXGroup;
+			children = (
+				4930B8FD2D686DC30074E861 /* BilibiliLive */,
+				F9B57351260F5F7400771ED5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9B57351260F5F7400771ED5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9B57350260F5F7400771ED5 /* BilibiliLive.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9B5734F260F5F7400771ED5 /* BilibiliLive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9B57362260F5F7600771ED5 /* Build configuration list for PBXNativeTarget "BilibiliLive" */;
+			buildPhases = (
+				4947421429050FAF005D6885 /* Swift formate */,
+				F9B5734C260F5F7400771ED5 /* Sources */,
+				F9B5734D260F5F7400771ED5 /* Frameworks */,
+				F9B5734E260F5F7400771ED5 /* Resources */,
+				499C75F7293096EC003160FB /* Embed Frameworks */,
+				FA1100010000000000000004 /* Optional support resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4930B8FD2D686DC30074E861 /* BilibiliLive */,
+			);
+			name = BilibiliLive;
+			packageProductDependencies = (
+				FA1100010000000000000002 /* FamilyCore */,
+				F9B5736D260F652C00771ED5 /* Alamofire */,
+				F9B57377260F6BB400771ED5 /* SwiftyJSON */,
+				F927ED64260F917D00EAB8E3 /* Gzip */,
+				F927ED9E2610B5C300EAB8E3 /* Kingfisher */,
+				F9171D5E2900FCFB002868C7 /* SnapKit */,
+				494741C229016CCE005D6885 /* MarqueeLabel */,
+				49078E46291BEA2400F556BD /* PocketSVG */,
+				499C75EB293058C9003160FB /* CocoaAsyncSocket */,
+				499C76122931A781003160FB /* Swifter */,
+				499C76152931A7AE003160FB /* SwiftyXMLParser */,
+				49508E0E2943420100D26812 /* CocoaLumberjack */,
+				49508E102943420100D26812 /* CocoaLumberjackSwift */,
+				0A41EE182A630FEA0066444C /* SwiftProtobuf */,
+				2806E51D2C1593A000164C10 /* LookinServer */,
+			);
+			productName = BilibiliLive;
+			productReference = F9B57350260F5F7400771ED5 /* BilibiliLive.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9B57348260F5F7400771ED5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					F9B5734F260F5F7400771ED5 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+				};
+			};
+			buildConfigurationList = F9B5734B260F5F7400771ED5 /* Build configuration list for PBXProject "BilibiliLive" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = F9B57347260F5F7400771ED5;
+			packageReferences = (
+				FA1100010000000000000003 /* XCLocalSwiftPackageReference "FamilyCore" */,
+				F9B5736C260F652C00771ED5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F9B57376260F6BB400771ED5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				F927ED63260F917D00EAB8E3 /* XCRemoteSwiftPackageReference "GzipSwift" */,
+				F927ED9D2610B5C300EAB8E3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				F9171D5D2900FCFB002868C7 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				494741C129016CCE005D6885 /* XCRemoteSwiftPackageReference "MarqueeLabel" */,
+				49078E45291BEA2400F556BD /* XCRemoteSwiftPackageReference "PocketSVG" */,
+				499C75EA293058C9003160FB /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */,
+				499C76112931A780003160FB /* XCRemoteSwiftPackageReference "swifter" */,
+				499C76142931A7AE003160FB /* XCRemoteSwiftPackageReference "SwiftyXMLParser" */,
+				49508E0D2943420100D26812 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */,
+				0A41EE172A630FEA0066444C /* XCRemoteSwiftPackageReference "swift-protobuf" */,
+				2806E51C2C1593A000164C10 /* XCRemoteSwiftPackageReference "LookinServer" */,
+			);
+			productRefGroup = F9B57351260F5F7400771ED5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9B5734F260F5F7400771ED5 /* BilibiliLive */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9B5734E260F5F7400771ED5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FA1100010000000000000004 /* Optional support resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = ();
+			inputPaths = ();
+			outputPaths = ();
+			name = "Optional support resources";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -eu\nif [ \"${FAMILY_SUPPORT_ENABLED:-NO}\" != \"YES\" ]; then\n  if [ -e \"$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/wechat-6uos.jpg\" ]; then\n    printf '%s\\n' 'Use a fresh DerivedData directory for a public build; private support resources remain.' >&2\n    exit 1\n  fi\n  exit 0\nfi\n: \"${FAMILY_SUPPORT_RESOURCE_DIR:?Set an absolute local support resource directory}\"\ncase \"$FAMILY_SUPPORT_RESOURCE_DIR\" in /*) ;; *) exit 1 ;; esac\ntest -f \"$FAMILY_SUPPORT_RESOURCE_DIR/SupportConfig.json\"\ntest -f \"$FAMILY_SUPPORT_RESOURCE_DIR/wechat-6uos.jpg\"\ncp -p \"$FAMILY_SUPPORT_RESOURCE_DIR/SupportConfig.json\" \"$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/SupportConfig.json\"\ncp -p \"$FAMILY_SUPPORT_RESOURCE_DIR/wechat-6uos.jpg\" \"$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/wechat-6uos.jpg\"\n";
+		};
+		4947421429050FAF005D6885 /* Swift formate */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift formate";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${SKIP_SWIFTFORMAT:-YES}\" = \"YES\" ]; then\n  exit 0\nfi\ncd \"$SRCROOT/BuildTools\"\nexport SDKROOT=\"$(xcrun --sdk macosx --show-sdk-path)\"\nswift run -c release swiftformat --disable unusedArguments,numberFormatting,redundantReturn,andOperator,anyObjectProtocol,trailingClosures,redundantFileprivate --ranges nospace --swiftversion 5 \"$SRCROOT\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9B5734C260F5F7400771ED5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F9B57360260F5F7600771ED5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 16.0;
+			};
+			name = Debug;
+		};
+		F9B57361260F5F7600771ED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 16.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9B57363260F5F7600771ED5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BilibiliLive/Vendor",
+					"$(PROJECT_DIR)/BilibiliLive/Vendor/DanmakuKit",
+				);
+				INFOPLIST_FILE = "BilibiliLive/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BilibiliLive/Vendor",
+				);
+				FAMILY_APP_BUNDLE_IDENTIFIER = com.etan.tv.BilibiliLive;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(FAMILY_APP_BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 16.0;
+			};
+			name = Debug;
+		};
+		F9B57364260F5F7600771ED5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BilibiliLive/Vendor",
+					"$(PROJECT_DIR)/BilibiliLive/Vendor/DanmakuKit",
+				);
+				INFOPLIST_FILE = "BilibiliLive/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BilibiliLive/Vendor",
+				);
+				FAMILY_APP_BUNDLE_IDENTIFIER = com.etan.tv.BilibiliLive;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(FAMILY_APP_BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 16.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9B5734B260F5F7400771ED5 /* Build configuration list for PBXProject "BilibiliLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9B57360260F5F7600771ED5 /* Debug */,
+				F9B57361260F5F7600771ED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9B57362260F5F7600771ED5 /* Build configuration list for PBXNativeTarget "BilibiliLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9B57363260F5F7600771ED5 /* Debug */,
+				F9B57364260F5F7600771ED5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		FA1100010000000000000003 /* XCLocalSwiftPackageReference "FamilyCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = FamilyCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A41EE172A630FEA0066444C /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-protobuf.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		2806E51C2C1593A000164C10 /* XCRemoteSwiftPackageReference "LookinServer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/QMUI/LookinServer/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.8;
+			};
+		};
+		49078E45291BEA2400F556BD /* XCRemoteSwiftPackageReference "PocketSVG" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pocketsvg/PocketSVG.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.0;
+			};
+		};
+		494741C129016CCE005D6885 /* XCRemoteSwiftPackageReference "MarqueeLabel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/cbpowell/MarqueeLabel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.3;
+			};
+		};
+		49508E0D2943420100D26812 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CocoaLumberjack/CocoaLumberjack.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		499C75EA293058C9003160FB /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/robbiehanson/CocoaAsyncSocket.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		499C76112931A780003160FB /* XCRemoteSwiftPackageReference "swifter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yichengchen/swifter.git";
+			requirement = {
+				branch = stable;
+				kind = branch;
+			};
+		};
+		499C76142931A7AE003160FB /* XCRemoteSwiftPackageReference "SwiftyXMLParser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yahoojapan/SwiftyXMLParser";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		F9171D5D2900FCFB002868C7 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		F927ED63260F917D00EAB8E3 /* XCRemoteSwiftPackageReference "GzipSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/1024jp/GzipSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+		F927ED9D2610B5C300EAB8E3 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		F9B5736C260F652C00771ED5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+		F9B57376260F6BB400771ED5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA1100010000000000000002 /* FamilyCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA1100010000000000000003 /* XCLocalSwiftPackageReference "FamilyCore" */;
+			productName = FamilyCore;
+		};
+		0A41EE182A630FEA0066444C /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A41EE172A630FEA0066444C /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobuf;
+		};
+		2806E51D2C1593A000164C10 /* LookinServer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2806E51C2C1593A000164C10 /* XCRemoteSwiftPackageReference "LookinServer" */;
+			productName = LookinServer;
+		};
+		49078E46291BEA2400F556BD /* PocketSVG */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49078E45291BEA2400F556BD /* XCRemoteSwiftPackageReference "PocketSVG" */;
+			productName = PocketSVG;
+		};
+		494741C229016CCE005D6885 /* MarqueeLabel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 494741C129016CCE005D6885 /* XCRemoteSwiftPackageReference "MarqueeLabel" */;
+			productName = MarqueeLabel;
+		};
+		49508E0E2943420100D26812 /* CocoaLumberjack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49508E0D2943420100D26812 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjack;
+		};
+		49508E102943420100D26812 /* CocoaLumberjackSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49508E0D2943420100D26812 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjackSwift;
+		};
+		499C75EB293058C9003160FB /* CocoaAsyncSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 499C75EA293058C9003160FB /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */;
+			productName = CocoaAsyncSocket;
+		};
+		499C76122931A781003160FB /* Swifter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 499C76112931A780003160FB /* XCRemoteSwiftPackageReference "swifter" */;
+			productName = Swifter;
+		};
+		499C76152931A7AE003160FB /* SwiftyXMLParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 499C76142931A7AE003160FB /* XCRemoteSwiftPackageReference "SwiftyXMLParser" */;
+			productName = SwiftyXMLParser;
+		};
+		F9171D5E2900FCFB002868C7 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9171D5D2900FCFB002868C7 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		F927ED64260F917D00EAB8E3 /* Gzip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F927ED63260F917D00EAB8E3 /* XCRemoteSwiftPackageReference "GzipSwift" */;
+			productName = Gzip;
+		};
+		F927ED9E2610B5C300EAB8E3 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F927ED9D2610B5C300EAB8E3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		F9B5736D260F652C00771ED5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9B5736C260F652C00771ED5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F9B57377260F6BB400771ED5 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9B57376260F6BB400771ED5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F9B57348260F5F7400771ED5 /* Project object */;
+}
