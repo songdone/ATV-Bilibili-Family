@@ -35,11 +35,14 @@ xcodebuild -project BilibiliLive.xcodeproj -scheme BilibiliLive \
   -derivedDataPath "$RUN/DerivedData" \
   -onlyUsePackageVersionsFromResolvedFile \
   CODE_SIGNING_ALLOWED=NO \
+  GCC_GENERATE_DEBUGGING_SYMBOLS=NO SWIFT_SERIALIZE_DEBUGGING_OPTIONS=NO \
   FAMILY_APP_BUNDLE_IDENTIFIER=com.songdone.ATVBilibiliFamily \
   FAMILY_SUPPORT_ENABLED=NO SKIP_SWIFTFORMAT=YES build
 ```
 
 产物位于 `$RUN/DerivedData/Build/Products/Release-appletvos/BilibiliLive.app`。打包 IPA 时在独立临时目录创建 `Payload` 并复制该 `.app`，再 ZIP 压缩 `Payload`。最终应确认包内所有 Mach-O 均无签名，且没有 `embedded.mobileprovision` 或 `_CodeSignature`；未签名产物必须由接收方重签才可装到 Apple TV。不同签名或工具链会使最终二进制/文件哈希不同，不承诺逐字节复现。
+
+公开发布前应在不含个人用户名的独立目录中构建，例如 `/private/tmp/ATVFamily-public-build.XXXXXX/source`，依赖 checkout 也使用同一临时根下的 `packages` 目录（通过 `-clonedSourcePackagesDirPath` 指定）。仅映射调试路径未必覆盖 Swift `#file` 字面量；必须扫描最终主程序与框架中是否残留个人主目录、签名或设备标识。0.1.1 发布包采用该方式构建，并在打包副本中对所有 Mach-O 执行 `xcrun strip -S` 移除调试符号；不修改业务代码，也不修改已验证的原构建目录。
 
 为了避免缓存越积越多，构建结束后只清理本次 `$RUN` 的中间文件、索引和依赖缓存；保留需要交付的产物与测试证据，不使用会删除源码根目录文件的清理命令。
 
